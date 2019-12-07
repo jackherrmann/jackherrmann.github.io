@@ -1,0 +1,110 @@
+"editor.rulers": [80]
+
+<!DOCTYPE html>
+<html>
+    
+<head> 
+    <meta charset="UTF-8"> 
+</head> 
+<body>
+    <style> 
+        body{ 
+            background-color: white; 
+            font-size: 1.5em; 
+        }
+        header{
+            width: 100%; 
+            background-image: url("philly-background3.jpg"); 
+            background-size: 100%; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+        }
+        h1{
+            text-align: right; 
+            color: white;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 60px; 
+        }
+        h2{
+            text-align: center; 
+        }
+        nav{
+            width: 100%; 
+            display: flex; 
+            flex-direction: row; 
+            position: absolute; 
+            bottom: 0; 
+        }
+        a{ 
+            padding-right: 3px; 
+            padding-left: 3px; 
+            padding-top: 3px; 
+            padding-bottom: 3px; 
+            margin-right: 3px; 
+            margin-left: 20px; 
+            color: white; 
+            text-decoration: none; 
+            font-size: 30px; 
+            border-style: solid; 
+            border-width: 1px; 
+            border-color: white; 
+            background-color: rgba(255, 255, 255, .2);
+        }
+        
+        a:hover{
+            animation-name: hover-animation;
+            animation-duration: 300ms;
+            animation-fill-mode: forwards; 
+        }
+        @keyframes hover-animation {
+            100% {
+                background-color: rgba(255, 255, 255, 0.5);  
+                font-size: 35px; 
+                padding-top: 8px;
+                padding-right: 15px; 
+                padding-left: 15px; 
+            }
+        }
+
+        #proj-container{
+            display: grid; 
+            grid-template-columns: 20em 15em; 
+            justify-content: left;
+            grid-column-gap: .1em; 
+        }
+
+        img{
+            size: 20em; 
+            justify-content: left; 
+        }
+    
+    
+    </style>
+    <header>
+        <h1> Jack Herrmann </h1> 
+        <nav> 
+            <a href="index.html">Home </a>
+            <a href="aboutme.html">About Me </a>
+            <a href="projects.html">Projects </a>
+            <a href="findme.html">Find Me  </a>
+        </nav> 
+        <br><br>
+        
+    </header>
+    <main> 
+        <br><br><br><br><br><br>
+        <h2> Projects </h2>
+        Find the source for all of my projects on GitHub on the "FindMe" page. 
+        
+        
+        <h3>Florpy Blord</h3>
+        <div id = "proj-container">
+        <div><img src="flappy-bird.jpg" alt="Florpy Blord"></div>
+        <div>Florpy Blord is a remake of the popular 2013 game "Floppy Bird," made for my final project of CIS 120: Programming Languages and Techniques II. I created it using Java Swing, with art from PixelArtMaker. In addition to the normal game mode, there is also an option to let an AI play, which is a recursive algorithm that predicts whether the bird will hit anything if it jumps, and plays accordingly.  </div>
+        </div>
+    </main>
+
+
+</body>
+</html>

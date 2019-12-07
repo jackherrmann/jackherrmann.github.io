@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    
+<head> 
+    <meta charset="UTF-8"> 
+</head> 
+<body>
+    <style> 
+        body{ 
+            background-color: white; 
+            font-size: 1.5em; 
+        }
+        header{
+            width: 100%; 
+            background-image: url("philly-background3.jpg"); 
+            background-size: 100%; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+        }
+        h1{
+            text-align: right; 
+            color: white;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 60px; 
+        }
+        h2{
+            text-align: center; 
+        }
+        nav{
+            width: 100%; 
+            display: flex; 
+            flex-direction: row; 
+            position: absolute; 
+            bottom: 0; 
+        }
+        a{ 
+            padding-right: 3px; 
+            padding-left: 3px; 
+            padding-top: 3px; 
+            padding-bottom: 3px; 
+            margin-right: 3px; 
+            margin-left: 20px; 
+            color: white; 
+            text-decoration: none; 
+            font-size: 30px; 
+            border-style: solid; 
+            border-width: 1px; 
+            border-color: white; 
+            background-color: rgba(255, 255, 255, .2);
+        }
+        
+        a:hover{
+            animation-name: hover-animation;
+            animation-duration: 300ms;
+            animation-fill-mode: forwards; 
+        }
+        @keyframes hover-animation {
+            100% {
+                background-color: rgba(255, 255, 255, 0.5);  
+                font-size: 35px; 
+                padding-top: 8px;
+                padding-right: 15px; 
+                padding-left: 15px; 
+            }
+        }
+    
+    
+    </style>
+    <header>
+        <h1> Jack Herrmann </h1> 
+        <nav> 
+            <a href="index.html">Home </a>
+            <a href="aboutme.html">About Me </a>
+            <a href="projects.html">Projects </a>
+            <a href="findme.html">Find Me  </a>
+        </nav> 
+        <br><br>
+        
+    </header>
+    <main> 
+        <br><br><br><br><br><br><br>
+        <h2> About Me </h2>
+        Hello and welcome! I'm Jack, a sophomore studying Computer Science at the University of Pennsylvania's School of Engineering and Applied Science. 
+        <br>
+        To contact me or find me elsewhere, check out the "Find Me" page above. 
+         
+    </main>
+
+
+</body>
+</html>
